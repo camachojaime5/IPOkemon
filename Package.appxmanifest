@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+
+  <Identity
+    Name="5ce21b8d-a4f2-49c9-a480-a823433b491b"
+    Publisher="CN=Adrian"
+    Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="5ce21b8d-a4f2-49c9-a480-a823433b491b" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>IPOkemonAdrianUtrilla</DisplayName>
+    <PublisherDisplayName>Adrian</PublisherDisplayName>
+    <Logo>Tiles\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="IPOkemonAdrianUtrilla.App">
+      <uap:VisualElements
+        DisplayName="IPOKEMON - AJ"
+        Square44x44Logo="Tiles\Square44x44Logo.png"
+        Description="IPOKEMON - Adrian Utriila Sanchez - Jaime Camacho García"
+        BackgroundColor="transparent" Square150x150Logo="Tiles\IPOKEMON - AJ.png">
+        <uap:DefaultTile  ShortName="IPOKEMON - AdrianJaime" Square71x71Logo="Tiles\IPOKEMON - AJ.png" Wide310x150Logo="Tiles\IPOKEMON - AJ.png" Square310x310Logo="Tiles\IPOKEMON - AJ.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo"/>
+            <uap:ShowOn Tile="wide310x150Logo"/>
+            <uap:ShowOn Tile="square310x310Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile >
+        <uap:SplashScreen Image="Tiles\SplashScreen.png"  BackgroundColor="#f6f6f6"/>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

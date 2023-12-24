@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="IPOkemonAdrianUtrilla.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IPOkemonAdrianUtrilla"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Background>
+        <ImageBrush ImageSource="/Assets/pokemonWallpaper.jpg" Opacity="0.75"/>
+    </Page.Background>
+
+    <Grid>
+
+        <Frame x:Name="fmMain" Grid.Row="1" Grid.Column="1">
+            <TextBlock x:Name="bienvenida" TextWrapping="Wrap" Text="Bienvenido a IPOkemon, una aplicacion de pokemon hecha en IPO 2. Hecho por Jaime Camacho García y Adrián Utrilla Sánchez" VerticalAlignment="Top" Foreground="Black" FontSize="36" FontFamily="Comic Sans MS" FontWeight="Bold" Margin="100,50,100,0" TextAlignment="Center"/>
+            
+        </Frame>
+
+        <NavigationView ItemInvoked="viPokedex_PointerReleased" IsBackEnabled="True" BackRequested="NavigationView_BackRequested">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Inicio" x:Name="viHome" Icon="Home"/>
+                <NavigationViewItem Content="Pokedex" x:Name="viPokedex" Icon="AllApps"/>
+                <NavigationViewItem Content="Combate" x:Name="viCombate" Icon="People"/>
+                <NavigationViewItem Content="Captura" x:Name="viCaptura" Icon="Map"/>
+            </NavigationView.MenuItems>
+        </NavigationView>
+
+
+    </Grid>
+</Page>

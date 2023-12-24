@@ -1,0 +1,623 @@
+﻿<Page
+    x:Class="IPOkemonAdrianUtrilla.infoPokemon"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IPOkemonAdrianUtrilla"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Background>
+        <ImageBrush ImageSource="/Assets/pokemonWallpaper.jpg"/>
+    </Page.Background>
+
+    <Grid>
+        <Frame x:Name="fmMain" Grid.Row="1" Grid.Column="1">
+
+            <Grid x:Name="gridInFrame">
+                
+                <Grid x:Name="gridPorygon" d:IsHidden="True">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="30*"/>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="15*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Image Source="/Assets/Porygon.png" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="80,80,80,80"/>
+
+                    <Border Background="SlateGray" CornerRadius="10" Opacity="0.8"
+                Height="{Binding ElementName=text1Porygon, Path=ActualHeight}"
+                Grid.Column="0" Grid.Row="3" Grid.RowSpan="2" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="50,5,50,0"/>
+                    <RichTextBlock x:Name="text1Porygon" Grid.Column="0" Grid.Row="3" Grid.RowSpan="2" TextAlignment="Right" Margin="12,0" FocusVisualSecondaryBrush="#00000000">
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Generación: " FontWeight="Bold" FontSize="20" />
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Categoria: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Tipo: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Peso: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Altura: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Grupo de huevo: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Sexo: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Habitat: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Color: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                    </RichTextBlock>
+
+                    <RichTextBlock x:Name="text2Porygon" Grid.Column="1" Grid.Row="3" Grid.RowSpan="2" Margin="12,0" FocusVisualSecondaryBrush="#00000000">
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" Primera" FontSize="20" />
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" Virtual" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" Normal" FontSize="20" Foreground="SaddleBrown"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" 36,5 kg" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" 0,8 m" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" Mineral" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" Sin sexo" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" Ciudad" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" Rosa" FontSize="20" Foreground="HotPink"/>
+                        </Paragraph>
+                    </RichTextBlock>
+
+
+                    <Border Background="#FFC8C8C8" CornerRadius="10" Opacity="0.8"
+                Width="{Binding ElementName=text3Porygon, Path=ActualWidth}"
+                Height="{Binding ElementName=text3Porygon, Path=ActualHeight}"
+                Grid.Column="2" Grid.Row="0" Grid.RowSpan="5"/>
+                    <RichTextBlock x:Name="text3Porygon" Grid.Column="2" Grid.Row="0" Grid.RowSpan="5" TextAlignment="Justify" Margin="12,0" VerticalAlignment="Center" Foreground="Black">
+                        <Paragraph FontSize="33" FontFamily="Bodoni MT">
+                            Biologia
+                        </Paragraph>
+                        <Paragraph FontSize="16">
+                            Porygon posee una forma física similar a la de un pato poligonal.
+                Porygon es el primer Pokémon artificial y fue creado en el laboratorio de Isla Canela, según un informe que se encuentra en Silph S.A..
+                Su cuerpo es de color rosa en la espalda y la cabeza, mientras que el estómago, los pies, la cola y el pico son de color azul.
+                Porygon está completamente fuera de código de programación. Tiene protección anti-copia, por lo que es imposible duplicarlo.
+                        </Paragraph>
+                        <Paragraph FontSize="16">
+                            Debido a que es un Pokémon creado por el hombre y que no necesita respirar, suelen querer usarlo en cualquier sitio para probar sus capacidades.
+                Fue creado hace unos veinte años en base a muchas investigaciones y usando tecnología de punta de la época, sin embargo, sus habilidades siguen siendo básicas, haciendo cosas que solo le hayan asignado por lo que ahora se encuentra desfasado en muchos aspectos.
+                Algunos científicos lo crearon con el sueño de que fuera capaz de volar y de explorar el espacio, lamentablemente dicho sueño aún no se ha cumplido.
+                Algunos han viajado por el tiempo gracias a las distorsiones espaciotemporales, dejando a los investigadores de la época totalmente perplejos debido a que puede vivir sin respirar y sin tener pulso alguno.
+                        </Paragraph>
+                        <Paragraph FontSize="16">
+                            Se puede mover libremente por el ciberespacio, haciendo que vivan dentro de los ordenadores y todo tipo de sistemas informáticos, transportadores de Poké Balls, etc... investigando y comprobando que no haya datos sospechosos.
+                        </Paragraph>
+                        <Paragraph/>
+                        <Paragraph FontSize="16">
+                            Info via:
+                            <Hyperlink NavigateUri="https://www.wikidex.net/wiki/Porygon">wikidex</Hyperlink>
+                        </Paragraph>
+                    </RichTextBlock>
+
+                    <Border Background="#FFC8C8C8" CornerRadius="10" Opacity="0.8"
+                Height="{Binding ElementName=text4Porygon, Path=ActualHeight}"
+                Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="5" VerticalAlignment="Center" Margin="50,5,50,0"/>
+                    <RichTextBlock x:Name="text4Porygon" Grid.Column="3" Grid.Row="0" Grid.RowSpan="5" TextAlignment="Right" Margin="12,0" VerticalAlignment="Center" Foreground="Black">
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Movimiento" FontSize="20" FontWeight="Bold"/>
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Placaje
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Impactrueno
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Onda trueno
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Chispa
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Triataque
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Rayo
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Recuperacion
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Hiperrayo
+                        </Paragraph>
+                    </RichTextBlock>
+
+                    <RichTextBlock x:Name="text5Porygon" Grid.Column="4" Grid.Row="0" Grid.RowSpan="5" Margin="12,0" VerticalAlignment="Center" Foreground="Black">
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Tipo" FontSize="20" FontWeight="Bold"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="SaddleBrown" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Normal" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Yellow" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Electrico" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Yellow" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Electrico" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Yellow" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Electrico" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="SaddleBrown" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Normal" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Yellow" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Electrico" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="SaddleBrown" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Normal" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="SaddleBrown" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Normal" FontSize="20"/>
+                        </Paragraph>
+                    </RichTextBlock>
+                    <Button x:Name="btnPotygonESP" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Click="btnPotygonESP_Click" Width="40" Height="40">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/Assets/BanderaEspaña.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btnPorygonEN" Grid.Column="4" HorizontalAlignment="Center" Click="btnPorygonEN_Click" Width="60" Height="40">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/Assets/BanderaUK-removebg-preview.png"/>
+                        </Button.Background>
+                    </Button>
+
+                </Grid>
+
+                <Grid x:Name="gridPsyduck">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="30*"/>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="15*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Image Source="/Assets/Psyduck.png" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="20,20,20,20"/>
+
+                    <Border Background="SlateGray" CornerRadius="10" Opacity="0.8"
+                Height="{Binding ElementName=text1Psyduck, Path=ActualHeight}"
+                Grid.Column="0" Grid.Row="3" Grid.RowSpan="2" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="50,5,50,0"/>
+                    <RichTextBlock x:Name="text1Psyduck" Grid.Column="0" Grid.Row="3" Grid.RowSpan="2" TextAlignment="Right" Margin="12,0" FocusVisualSecondaryBrush="#00000000">
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Generación: " FontWeight="Bold" FontSize="20" />
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Categoria: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Tipo: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Peso: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Altura: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Grupo de huevo: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Sexo: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Habitat: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Color: " FontWeight="Bold" FontSize="20"/>
+                        </Paragraph>
+                    </RichTextBlock>
+
+                    <RichTextBlock x:Name="text2Psyduck" Grid.Column="1" Grid.Row="3" Grid.RowSpan="2" Margin="12,0" FocusVisualSecondaryBrush="#00000000">
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" Primera" FontSize="20" />
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" Pato" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" Agua" FontSize="20" Foreground="Blue"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" 19,6 kg" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" 0,8 m" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" Campo Agua 1" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" Macho/Hembra" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" Agua dulce" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text=" Amarillo" FontSize="20" Foreground="Yellow"/>
+                        </Paragraph>
+                    </RichTextBlock>
+
+                    <Border Background="#FFC8C8C8" CornerRadius="10" Opacity="0.8"
+                Width="{Binding ElementName=text3Psyduck, Path=ActualWidth}"
+                Height="{Binding ElementName=text3Psyduck, Path=ActualHeight}"
+                Grid.Column="2" Grid.Row="0" Grid.RowSpan="5"/>
+                    <RichTextBlock x:Name="text3Psyduck" Grid.Column="2" Grid.Row="0" Grid.RowSpan="5" TextAlignment="Justify" Margin="12,0" VerticalAlignment="Center" Foreground="Black">
+                        <Paragraph FontSize="33" FontFamily="Bodoni MT">
+                            Biologia
+                        </Paragraph>
+                        <Paragraph FontSize="16">
+                            Psyduck está basado en un pato. Este Pokémon bípedo de tonalidad amarilla posee un enorme pico ancho, un par de ojos con una mirada perdida y tres pelos en la cabeza.
+                Sus patas delanteras tienen tres garras con las que puede llegar a rasguñar a sus oponentes, generalmente las usa para sostener su cabeza, sus patas traseras son palmeadas.
+                Posee una pequeña cola amarrilla.
+                        </Paragraph>
+                        <Paragraph FontSize="16">
+                            La principal característica de este Pokémon son sus poderes psíquicos, los cuales son más poderosos entre más fuerte sea la jaqueca que padece, estos dolores son tan fuertes que lo hacen chillar.
+                A pesar de esto, Psyduck nunca recuerda haber usado estos poderes, por lo que siempre parece desconcertado, de igual manera es muy difícil determinar cuando este los usará de nuevo.
+                Se dice que podrá usar estos poderes cuando sus neuronas se encuentren totalmente despiertas, este poder consiste en emitir ondas cerebrales similares a las que generan cuando está dormido.
+                Estos descubrimientos levantaron gran polémica entre los eruditos y científicos que lo investigan.
+                        </Paragraph>
+                        <Paragraph FontSize="16">
+                            Psyduck odia sus dolores de cabeza por lo que es común verlo tratando de mantener su mente en blanco y quedándose sin hacer nada.
+                Habita cerca de mantos acuíferos como lagos y ríos, siendo a veces arrastrados por las corrientes de estos últimos, aunque parece que no les importa demasiado.
+                Cuando anida se le suele ver en grupos para cuidar a sus huevos y polluelos.
+                        </Paragraph>
+                        <Paragraph/>
+                        <Paragraph FontSize="16">
+                            Info via:
+                            <Hyperlink NavigateUri="https://www.wikidex.net/wiki/Psyduck">wikidex</Hyperlink>
+                        </Paragraph>
+                    </RichTextBlock>
+
+                    <Border Background="#FFC8C8C8" CornerRadius="10" Opacity="0.8"
+                Height="{Binding ElementName=text4Psyduck, Path=ActualHeight}"
+                Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="5" VerticalAlignment="Center" Margin="50,5,50,0"/>
+                    <RichTextBlock x:Name="text4Psyduck" Grid.Column="3" Grid.Row="0" Grid.RowSpan="5" TextAlignment="Right" Margin="12,0" VerticalAlignment="Center" Foreground="Black">
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Movimiento" FontSize="20" FontWeight="Bold"/>
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Arañazo
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Latigo
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Pistola agua
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Confusión
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Golpes furia
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Hidropulso
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Anulación
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Cabezazo zen
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Chirrido
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Acua cola
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Empapar
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Autosugestión
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Amnesia
+                        </Paragraph>
+                        <Paragraph FontSize="20">
+                            Zona extraña
+                        </Paragraph>
+                    </RichTextBlock>
+
+                    <RichTextBlock x:Name="text5Psyduck" Grid.Column="4" Grid.Row="0" Grid.RowSpan="5" Margin="12,0" VerticalAlignment="Center" Foreground="Black">
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Black" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Tipo" FontSize="20" FontWeight="Bold"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="SaddleBrown" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Normal" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="SaddleBrown" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Normal" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Blue" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Agua" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="HotPink" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Psiquico" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="SaddleBrown" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Normal" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Blue" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Agua" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="SaddleBrown" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Normal" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="HotPink" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Psiquico" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="SaddleBrown" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Normal" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Blue" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Agua" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="Blue" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Agua" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="SaddleBrown" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Normal" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="HotPink" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Psiquico" FontSize="20"/>
+                        </Paragraph>
+                        <Paragraph>
+                            <Paragraph.Foreground>
+                                <SolidColorBrush Color="HotPink" Opacity="1"/>
+                            </Paragraph.Foreground>
+                            <Run Text="Psiquico" FontSize="20"/>
+                        </Paragraph>
+                    </RichTextBlock>
+                    <Button x:Name="btnPsyduckESP" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center" Click="btnPsyduckESP_Click" Width="40" Height="40">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/Assets/BanderaEspaña.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btnPsyduck" Grid.Column="4" HorizontalAlignment="Center" Click="btnPsyduck_Click" Width="60" Height="40">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/Assets/BanderaUK-removebg-preview.png"/>
+                        </Button.Background>
+                    </Button>
+
+                </Grid>
+
+            </Grid>
+
+
+        </Frame>
+    </Grid>
+    
+
+
+</Page>
